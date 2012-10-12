@@ -12,4 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# This file was generated from device/asus/grouper/proprietary-blobs.txt
+
 USE_CAMERA_STUB := false
