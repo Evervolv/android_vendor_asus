@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/grouper/proprietary/glgps:system/bin/glgps \
     vendor/asus/grouper/proprietary/sensors-config:system/bin/sensors-config \
     vendor/asus/grouper/proprietary/tf_daemon:system/bin/tf_daemon \
-    vendor/asus/grouper/proprietary/asound.conf:system/etc/asound.conf \
     vendor/asus/grouper/proprietary/bcm4330.hcd:system/etc/firmware/bcm4330.hcd \
     vendor/asus/grouper/proprietary/nvavp_os_00001000.bin:system/etc/firmware/nvavp_os_00001000.bin \
     vendor/asus/grouper/proprietary/nvavp_os_0ff00000.bin:system/etc/firmware/nvavp_os_0ff00000.bin \
@@ -37,6 +36,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/grouper/proprietary/gps.tegra3.so:system/lib/hw/gps.tegra3.so \
     vendor/asus/grouper/proprietary/gralloc.tegra3.so:system/lib/hw/gralloc.tegra3.so \
     vendor/asus/grouper/proprietary/hwcomposer.tegra3.so:system/lib/hw/hwcomposer.tegra3.so \
+    vendor/asus/grouper/proprietary/keystore.grouper.so:system/lib/hw/keystore.grouper.so \
     vendor/asus/grouper/proprietary/sensors.grouper.so:system/lib/hw/sensors.grouper.so \
     vendor/asus/grouper/proprietary/libardrv_dynamic.so:system/lib/libardrv_dynamic.so \
     vendor/asus/grouper/proprietary/libcgdrv.so:system/lib/libcgdrv.so \
