@@ -15,7 +15,6 @@
 # This file was generated from device/asus/grouper/proprietary-blobs.txt
 
 PRODUCT_COPY_FILES += \
-    vendor/asus/grouper/proprietary/btmacreader:system/bin/btmacreader \
     vendor/asus/grouper/proprietary/glgps:system/bin/glgps \
     vendor/asus/grouper/proprietary/sensors-config:system/bin/sensors-config \
     vendor/asus/grouper/proprietary/tf_daemon:system/bin/tf_daemon \
