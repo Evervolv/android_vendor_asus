@@ -12,8 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product-if-exists, vendor/asus/flo/asus/asus.mk)
-$(call inherit-product-if-exists, vendor/asus/flo/broadcom/broadcom.mk)
-$(call inherit-product-if-exists, vendor/asus/flo/qcom/qcom.mk)
-$(call inherit-product-if-exists, vendor/asus/flo/qcom/Android.mk)
-$(call inherit-product-if-exists, vendor/asus/flo/drm/drm.mk)
+# drm blob(s)
+
+PRODUCT_COPY_FILES := \
+    vendor/asus/flo/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/asus/flo/drm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
+
