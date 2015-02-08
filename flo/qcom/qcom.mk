@@ -81,6 +81,7 @@ PRODUCT_COPY_FILES := \
     vendor/asus/flo/qcom/libdss.so:system/lib/libdss.so:qcom \
     vendor/asus/flo/qcom/libdsucsd.so:system/lib/libdsucsd.so:qcom \
     vendor/asus/flo/qcom/libdsutils.so:system/lib/libdsutils.so:qcom \
+    vendor/asus/flo/qcom/libDxHdcp.so:system/lib/libDxHdcp.so:qcom \
     vendor/asus/flo/qcom/libgps.utils.so:system/lib/libgps.utils.so:qcom \
     vendor/asus/flo/qcom/libgsl.so:system/vendor/lib/libgsl.so:qcom \
     vendor/asus/flo/qcom/libI420colorconvert.so:system/lib/libI420colorconvert.so:qcom \
