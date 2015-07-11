@@ -1,4 +1,4 @@
-# Copyright 2013 The Android Open Source Project
+# Copyright 2013-2015 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,6 +14,6 @@
 
 # Asus blob(s) necessary for Flo hardware
 PRODUCT_COPY_FILES := \
-    vendor/asus/flo/asus/libacdbdata.so:system/lib/libacdbdata.so:asus \
-    vendor/asus/flo/asus/libAKM.so:system/lib/libAKM.so:asus \
+    vendor/asus/flo/asus/proprietary/libacdbdata.so:system/lib/libacdbdata.so:asus \
+    vendor/asus/flo/asus/proprietary/libAKM.so:system/lib/libAKM.so:asus \
 

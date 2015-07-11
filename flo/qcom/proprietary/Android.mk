@@ -12,8 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product-if-exists, vendor/asus/flo/asus/asus.mk)
-$(call inherit-product-if-exists, vendor/asus/flo/broadcom/broadcom.mk)
-$(call inherit-product-if-exists, vendor/asus/flo/qcom/qcom.mk)
-$(call inherit-product-if-exists, vendor/asus/flo/qcom/proprietary/Android.mk)
-$(call inherit-product-if-exists, vendor/asus/flo/drm/drm.mk)
+LOCAL_PATH := $(call my-dir)
+
+ifeq ($(TARGET_DEVICE),flo)
+
+# Create symbolic link because user space can access persist directory,
+# while kernel ALSA drivers can only access the /system/etc/firmware directory
+LOCAL_POST_INSTALL_CMD := \
+    mkdir -p $(TARGET_OUT_ETC)/firmware/wcd9310; \
+        ln -sf /data/misc/audio/wcd9310_anc.bin \
+        $(TARGET_OUT_ETC)/firmware/wcd9310/wcd9310_anc.bin; \
+        ln -sf /data/misc/audio/mbhc.bin \
+        $(TARGET_OUT_ETC)/firmware/wcd9310/wcd9310_mbhc.bin
+
+endif
