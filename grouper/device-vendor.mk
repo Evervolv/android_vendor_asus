@@ -1,4 +1,4 @@
-# Copyright (C) 2013 The Evervolv Project
+# Copyright (C) 2010 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,4 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, vendor/asus/grouper/device-vendor-blobs.mk)
+LOCAL_STEM := grouper/device-partial.mk
+
+$(call inherit-product-if-exists, vendor/asus/grouper/asus/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/asus/grouper/broadcom/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/asus/grouper/elan/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/asus/grouper/invensense/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/asus/grouper/nvidia/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/asus/grouper/nxp/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/asus/grouper/widevine/$(LOCAL_STEM))
+
+PRODUCT_RESTRICT_VENDOR_FILES := owner

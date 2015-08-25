@@ -12,12 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_STEM := grouper/BoardConfigPartial.mk
-
--include vendor/asus/grouper/asus/$(LOCAL_STEM)
--include vendor/asus/grouper/broadcom/$(LOCAL_STEM)
--include vendor/asus/grouper/elan/$(LOCAL_STEM)
--include vendor/asus/grouper/invensense/$(LOCAL_STEM)
--include vendor/asus/grouper/nvidia/$(LOCAL_STEM)
--include vendor/asus/grouper/nxp/$(LOCAL_STEM)
--include vendor/asus/grouper/widevine/$(LOCAL_STEM)
+# Asus blob(s) necessary for Grouper hardware
+PRODUCT_PACKAGES := \
+    sensors-config \
+    camera.tegra3 \
+    sensors.grouper \
+    libsensors.lightsensor \
+    libdrmwvmplugin \
+    libwvm
