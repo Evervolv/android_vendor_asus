@@ -12,8 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Qualcomm blob(s) necessary for Flo hardware
+$(call inherit-product-if-exists, vendor/asus/flo/qcom/proprietary/Android.mk)
+
+PRODUCT_PACKAGES := libacdbloader tzapps.mdt
+
 PRODUCT_COPY_FILES := \
+    vendor/asus/flo/asus/proprietary/libacdbdata.so:system/lib/libacdbdata.so:asus \
+    vendor/asus/flo/asus/proprietary/libAKM.so:system/lib/libAKM.so:asus \
+    vendor/asus/flo/broadcom/proprietary/bcm2079x-b5_firmware.ncd:system/vendor/firmware/bcm2079x-b5_firmware.ncd:broadcom \
+    vendor/asus/flo/broadcom/proprietary/bcm2079x-b5_pre_firmware.ncd:system/vendor/firmware/bcm2079x-b5_pre_firmware.ncd:broadcom \
     vendor/asus/flo/qcom/proprietary/ATFWD-daemon:system/bin/ATFWD-daemon:qcom \
     vendor/asus/flo/qcom/proprietary/bridgemgrd:system/bin/bridgemgrd:qcom \
     vendor/asus/flo/qcom/proprietary/btnvtool:system/bin/btnvtool:qcom \
@@ -60,7 +67,6 @@ PRODUCT_COPY_FILES := \
     vendor/asus/flo/qcom/proprietary/gps.msm8960.so:system/lib/hw/gps.msm8960.so:qcom \
     vendor/asus/flo/qcom/proprietary/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so:qcom \
     vendor/asus/flo/qcom/proprietary/libadreno_utils.so:system/vendor/lib/libadreno_utils.so:qcom \
-    vendor/asus/flo/qcom/proprietary/libacdbloader.so:system/lib/libacdbloader.so \
     vendor/asus/flo/qcom/proprietary/libaudcal.so:system/lib/libaudcal.so:qcom \
     vendor/asus/flo/qcom/proprietary/libaudioalsa.so:system/lib/libaudioalsa.so:qcom \
     vendor/asus/flo/qcom/proprietary/libC2D2.so:system/vendor/lib/libC2D2.so:qcom \
@@ -196,3 +202,5 @@ PRODUCT_COPY_FILES := \
     vendor/asus/flo/qcom/proprietary/libmmstillomx.so:system/vendor/lib/libmmstillomx.so:qcom \
     vendor/asus/flo/qcom/proprietary/liboemcamera.so:system/vendor/lib/liboemcamera.so:qcom \
     vendor/asus/flo/qcom/proprietary/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so:qcom \
+    vendor/asus/flo/drm/proprietary/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so:drm \
+    vendor/asus/flo/drm/proprietary/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so:drm
