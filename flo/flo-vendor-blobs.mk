@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The PureNexus Project
+# Copyright (C) 2015-2016 The PureNexus Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -110,7 +110,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/flo/proprietary/lib/libmmcamera_mi1040.so:system/lib/libmmcamera_mi1040.so \
     vendor/asus/flo/proprietary/lib/libmmcamera_ov5693.so:system/lib/libmmcamera_ov5693.so \
     vendor/asus/flo/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
-    vendor/asus/flo/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
     vendor/asus/flo/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
     vendor/asus/flo/proprietary/lib/libqdi.so:system/lib/libqdi.so \
     vendor/asus/flo/proprietary/lib/libqdp.so:system/lib/libqdp.so \
